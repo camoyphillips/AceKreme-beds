@@ -1,0 +1,58 @@
+extends ./partials/layout.pug
+
+block content
+  main
+    section.hero
+      h1 Welcome to AceKreme Inc.!
+      p Your destination for comfortable beds.
+      a.button(href="/about") Learn More About Us
+
+    section.featured-beds
+      h2 Our Featured Beds
+      .bed-grid
+        .bed-card
+          img(src="/images/bed1.jpg", alt="Classic Queen Bed")
+          h3 Classic Queen Bed
+          p.price $299.00
+          p A timeless design offering excellent support and comfort for a restful night's sleep.
+          ul.features
+            li Supportive Innerspring System
+            li Durable Quilted Fabric
+            li Medium Firmness
+          button.buy-button(data-product-id="queen") Add to Cart
+
+        .bed-card
+          img(src="/images/bed2.jpg", alt="Modern King Bed")
+          h3 Modern King Bed
+          p.price $399.00
+          p Experience spacious luxury with our Modern King Bed. 
+          ul.features
+            li Plush Pillow Top
+            li Memory Foam Layer
+            li Enhanced Edge Support
+            li Generous Sleeping Surface
+          button.buy-button(data-product-id="king") Add to Cart
+
+        .bed-card
+          img(src="/images/bed3.jpg", alt="Kids Bed")
+          h3 Kids Bed
+          p.price $199.00
+          p Designed with safety and comfort in mind, our Kids Bed is perfect for your little ones.
+          ul.features
+            li Low Profile for Safety
+            li Easy to Clean
+            li Child-Friendly Design
+          button.buy-button(data-product-id="kids") Add to Cart
+
+    section.why-choose-us
+      h2 Why Choose AceKreme?
+      .reasons
+        .reason
+          i.check-circle Quality 
+          p We are committed to selling high-quality materials.
+        .reason
+          i.truck Reliable Shipping
+          p Get your new bed safely to your doorstep across Ontario.
+        .reason
+          i.star Customer Satisfaction
+          p Your comfort is our top priority. We offer excellent customer support.

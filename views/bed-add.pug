@@ -1,0 +1,19 @@
+extends layout
+
+block layout-content
+  h1 Add Bed Link
+
+  form(action="/admin/menu/add/submit", method="post")
+    // Name field
+    div
+      label(for="name") Name:
+      input(type="text", id="name", name="name", required)
+
+    // Href field
+    div
+      label(for="href") Link URL:
+      input(type="url", id="href", name="href", required)
+
+    // Submit button
+    div
+      button(type="submit") Add Link

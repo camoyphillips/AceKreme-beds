@@ -1,0 +1,7 @@
+mixin productCard(title, price, imageSrc, altText)
+  .product-card
+    img(src=imageSrc, alt=description)
+    .product-info
+      h3= title
+      p $#{price}
+      button Add to Cart

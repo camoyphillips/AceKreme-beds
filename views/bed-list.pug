@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1 Administer Bed Links
+
+  table(border="1", cellpadding="10")
+    thead
+      tr
+        th Title
+        th Href
+        th Actions
+    tbody
+      each bed in beds
+        tr
+          td= bed.text
+          td= bed.href
+          td
+            a(href=`/edit/${bed._id}`) Edit
+            |  |  
+            a(href=`/delete/${bed._id}`) Delete

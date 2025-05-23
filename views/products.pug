@@ -1,0 +1,10 @@
+extends ./partials/layout
+
+include ./components/product-card.pug
+
+block content
+  .products-section
+    h2 Our Products
+    .product-grid
+      each product in products
+        +productCard(product.title, product.price, product.imageSrc, product.altText)
